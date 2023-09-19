@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modale.css">
+    <script src="modale.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Julien Imbert</h1>
+        <p>Développeur Web</p>
+    </header>
+            
+    <section id="presentation">
+        <h2>Qui je suis ?</h2>
+        <p>Je suis un jeune de 25 ans, responsable serieux et motivé ayant acquis beaucoup de compétences par mon passé au travers de mes études ainsi que de mes expèriences professionnelles</p>
+        <h2>Mon parcours</h2>
+        <p>J'ai fait le choix d'un bac scientifique au lycée car les matières scientifiques me plaisaient, j'ai poursuivi avec un bts Négociations et Relation Client en alternance pour l'expèrience professionnelle ainsi que le contact à la clientèle et la relation client</p>
+        <h2>Mes expèriences</h2>
+        <p>J'ai eu la chance qu'une boulangerie dans la quelle j'ai pu faire mon stage de troisième me recontact afin de travailler en job étudiant. C'est dans cet emploi que j'ai pu découvrir et apprecier mes première responsabilitées et expèriences avec la clientèle.</p>
+        <h2>Pourquoi le developpement ?</h2>
+        <p>Passionné depuis jeune par les technologies, je me suis toujours interressé à cette univers.</p>
+    </section>
+
+    <section id="competences">
+        <div class="competence">
+            <img src="Images/HTML5 (1).png" alt="">
+            <h2>Frontend</h2>
+            <div class="competences-list">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>React</p>
+            </div>
+        </div>
+        <div class="competence">
+            <img src="Images/Backend (1).png" alt="">
+            <h2>Backend</h2>
+            <div class="competences-list">
+                <p>Node.js</p>
+                <p>Javascript</p>
+            </div>
+        </div>
+        <div class="competence">
+            <img src="Images/Outils (1).jpg" alt="">
+            <h2>Outils</h2>
+            <div class="competences-list">
+                <p>Visual Studio Code</p>
+                <p>Npm / Yarn</p>
+                <p>Github</p>
+                <p>MongoDB</p>
+                <p>Canva</p>
+                <p>Trello</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="projet">
+            <h2>Créez la page d'accueil d'une agence de voyage avec HTML & CSS</h2>
+            <button class="voir-projet" onclick="afficherModal('projet1')">Voir le projet</button>
+            <div class="modal" id="projet1-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet1')">X</span>
+                    <h3>Créez la page d'accueil d'une agence de voyage avec HTML & CSS</h3>
+                    <img src="Images/Booki.png" alt="Image du projet 1">
+                    <p>Intégration des maquettes en HTML & CSS.</p>
+                    <h4>Languages utilisés :</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P2">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <h2>Créer une page web dynamique avec Javascript</h2>
+            <button class="voir-projet" onclick="afficherModal('projet2')">Voir le projet</button>
+            <div class="modal" id="projet2-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet2')">X</span>
+                    <h3>Créer une page web dynamique avec Javascript</h3>
+                    <img src="/Images/Logo.png" alt="Image du projet 2">
+                    <p>Conception du site portfolio d'une architecte d'intèrieur.</p>
+                    <h4>Languages utilisés :</h4>
+                    <ul>
+                        <li>Javascript</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P3">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <h2>Planifier le développement du site de votre client</h2>
+            <button class="voir-projet" onclick="afficherModal('projet3')">Voir le projet</button>
+            <div class="modal" id="projet3-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet3')">X</span>
+                    <h3>Planifier le développement du site de votre client</h3>
+                    <img src="/Images/Group 13.png" alt="Image du projet 3">
+                    <p>Mener, préparer et planifier le projet de developpement du site Menu Maker by Qwenta.</p>
+                    <h4>Outils utilisés :</h4>
+                    <ul>
+                        <li>Canva</li>
+                        <li>Trello</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P3">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <h2>Débugger et optimiser un site de photographe</h2>
+            <button class="voir-projet" onclick="afficherModal('projet4')">Voir le projet</button>
+            <div class="modal" id="projet4-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet4')">X</span>
+                    <h3>Débugger et optimiser un site de photographe</h3>
+                    <img src="/Images/Nina Carducci.jpg" alt="Image du projet 4">
+                    <p>Optimiser et debuger le site de Nina Carducci photographe tout en ameliorant le SEO.</p>
+                    <h4>Outils utilisés :</h4>
+                    <ul>
+                        <li>Canva</li>
+                        <li>Trello</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P4">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <h2>Créer une application web de location immobilière avec React</h2>
+            <button class="voir-projet" onclick="afficherModal('projet5')">Voir le projet</button>
+            <div class="modal" id="projet5-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet5')">X</span>
+                    <h3>Débugger et optimiser un site de photographe</h3>
+                    <img src="Images/kasa.png" alt="Image du projet 5">
+                    <p>Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end.</p>
+                    <h4>Languages utilisés :</h4>
+                    <ul>
+                        <li>React</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P5">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <h2>Développer le back-end d'un site de notation de livres</h2>
+            <button class="voir-projet" onclick="afficherModal('projet6')">Voir le projet</button>
+            <div class="modal" id="projet6-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet6')">X</span>
+                    <h3>Développer le back-end d'un site de notation de livres</h3>
+                    <img src="Images/MVG.png" alt="Image du projet 6">
+                    <p>Réaliser le backend du site avec différents utilisateurs, système de notations et livre.</p>
+                    <h4>Languages utilisés :</h4>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Nodes.js</li>
+                    </ul>
+                    <h4>Outils utilisés :</h4>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>MongoDB Atlas</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P6">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="CV" class="center">
+        <h2>Cirriculum Vitae</h2>
+        <p>Vous pouvez <a href="CV - 2023.pdf" target="_blank"><span>cliquez ici</span> pour accéder à mon CV.</a></p>
+    </section>
+    
+    
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>Si vous avez des questions ou souhaitez me contacter, n'hésitez pas à remplir le formulaire ci-dessous :</p>
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <!-- Contenu du pied de page (footer) -->
+    </footer>
+</body>
+</html>
