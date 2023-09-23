@@ -1,0 +1,217 @@
+/* Réinitialisation des marges et des espacements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du body */
+body {
+    background-color: #f2f2f2; /* Couleur de fond de la page */
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, a, span, strong {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style de la barre de navigation */
+header nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Espacement intérieur en haut et en bas de la barre de navigation */
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style du titre et du sous-titre */
+header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+header p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#presentation .quiJeSuis {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texte {
+    width: 50%;
+}
+
+/* Style des sections */
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto; /* Centrer les sections horizontalement */
+    max-width: 90%; /* Largeur maximale de la section */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des titres de section */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style des paragraphes dans les sections */
+section p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Style pour le lien vers le CV */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: blue;
+}
+/* Style pour centrer la section CV */
+.center {
+    text-align: center; /* Centrer le texte horizontalement */
+    margin: 0 auto; /* Centrer la section horizontalement */
+    max-width: 90%; /* Largeur maximale de la section pour mieux la centrer */
+    padding: 20px; /* Espacement intérieur pour améliorer l'apparence */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des compétences */
+section#competences {
+    display: flex;
+    justify-content: space-around; /* Pour aligner horizontalement les compétences */
+    width: 100%;
+}
+
+/* Style pour chaque section de compétences */
+.competence {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Largeur maximale pour chaque section */
+}
+
+/* Style pour les titres de section */
+.competence h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style pour la liste des compétences */
+.competences-list p {
+    font-size: 16px;
+    margin: 5px 0; /* Espacement entre les compétences */
+}
+
+/* Style pour la section Portfolio */
+section#portfolio {
+    display: flex;
+    justify-content: space-around; /* Pour aligner horizontalement les cases de projet */
+    flex-wrap: wrap; /* Permettre aux cases de s'aligner sur plusieurs lignes si nécessaire */
+}
+
+/* Style pour chaque case de projet */
+.projet {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 250px; /* Largeur maximale pour chaque case de projet */
+    margin: 10px; /* Espacement entre les cases de projet */
+}
+
+.interProjet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Style pour les titres de projet */
+.projet h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les descriptions de projet */
+.projet p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les liens de projet */
+.projet a {
+    text-decoration: none;
+    color: #007BFF; /* Couleur du lien */
+    font-weight: bold;
+}
+
+/* Style pour les liens de projet au survol */
+.projet a:hover {
+    color: #0056b3; /* Couleur du lien au survol */
+}
+
+/* Style pour le formulaire de contact */
+section#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 90%; /* Largeur maximale du formulaire */
+    margin: 20px auto; /* Centrer le formulaire horizontalement */
+    text-align: center;
+}
+
+
+/* Style pour le bouton d'envoi */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+

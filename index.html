@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modale.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Julien Imbert</h1>
+        <p>Développeur Web</p>
+    </header>
+            
+    <section id="presentation">
+        <div class="quiJeSuis">
+            <div class="texte">
+                <h2>Qui je suis ?</h2>
+                <p>Je me présente je m'appelle Julien j'ai 25 ans, responsable serieux et motivé ayant acquis beaucoup de compétences par mon passé au travers de mes études ainsi que de mes expèriences professionnelles.</p>
+            </div> 
+            <div class="image">
+                <img src="Images/Julien1.jpg" alt="">
+            </div>
+        </div>
+        <h2>Mon parcours</h2>
+        <p>J'ai fait le choix d'un bac scientifique au lycée car c'était les matières scientifiques me plaisaient, j'ai poursuivi avec un bts Négociations et Relation Client en alternance pour l'expèrience professionnelle ainsi que le contact à la clientèle.</p>
+        <h2>Mes expèriences</h2>
+        <p>J'ai eu la chance qu'une boulangerie dans la quelle j'ai pu faire mon stage de troisième me recontact afin de travailler en job étudiant. C'est dans cet emploi que j'ai pu découvrir et apprecier mes première responsabilitées et expèriences avec la clientèle.</p>
+        <h2>Pourquoi le developpement ?</h2>
+        <p>Passionné depuis jeune par les technologies, je me suis toujours interressé à cette univers. J'ai donc décidé de reprendre les études au sein d'Openclassrooms avec une formation de Développeur Web <br>
+            C'est d'ailleurs lors des différents projets présentés ci-dessous que j'ai pu acquerir <a href="Images/Carte.PNG"><span>ces compétences.</span></a> </p>
+    </section>
+
+    <section id="competences">
+        <div class="competence">
+            <img src="Images/HTML5 (1).png" alt="">
+            <h2>Frontend</h2>
+            <div class="competences-list">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>React</p>
+            </div>
+        </div>
+        <div class="competence">
+            <img src="Images/Backend (1).png" alt="">
+            <h2>Backend</h2>
+            <div class="competences-list">
+                <p>Node.js</p>
+                <p>Javascript</p>
+                <p>Express</p>
+            </div>
+        </div>
+        <div class="competence">
+            <img src="Images/Outils (1).jpg" alt="">
+            <h2>Outils</h2>
+            <div class="competences-list">
+                <p>Npm / Yarn</p>
+                <p>Github</p>
+                <p>MongoDB</p>
+                <p>Trello</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="projet">
+            <div class="interProjet">
+                <h2>Créez la page d'accueil d'une agence de voyage avec HTML & CSS</h2>
+                <button class="voir-projet" onclick="afficherModal('projet1')">Voir le projet</button>
+            </div>
+            <div class="modal" id="projet1-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet1')">X</span>
+                    <h3>Intégration de l'interface du site Booki</h3>
+                    <img src="Images/Booki.png" alt="Image du projet 1">
+                    <p>Booki est une société qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. <br>
+                        J'ai été chargé d'intégrer l'interface du site en HTML & CSS, sur la base de l'UI designer. </p>
+                    <h4>Languages utilisés :</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P2">Lien vers le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <div class="interProjet">
+                <h2>Créer une page web dynamique avec Javascript</h2>
+                <button class="voir-projet" onclick="afficherModal('projet2')">Voir le projet</button>
+            </div>
+            <div class="modal" id="projet2-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet2')">X</span>
+                    <h3>Créer une page web dynamique avec Javascript</h3>
+                    <img src="/Images/Logo.png" alt="Image du projet 2">
+                    <p>Conception du site portfolio d'une architecte d'intèrieur. <br>
+                        J'ai été chargé de developper la page de présentation des travaux, la page de création/connexion de l'administrateur du site ainsi que la modale permetant d'uploader de nouveaux média.</p>
+                    <h4>Languages utilisés :</h4>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P3">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <div class="interProjet">
+                <h2>Planifier le développement du site de votre client</h2>
+                <button class="voir-projet" onclick="afficherModal('projet3')">Voir le projet</button>
+            </div>
+            <div class="modal" id="projet3-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet3')">X</span>
+                    <h3>Planifier le développement du site de votre client</h3>
+                    <img src="/Images/Group 13.png" alt="Image du projet 3">
+                    <p>Qwenta souhaite developper un Menu Maker permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics. <br>
+                    j'ai été charger de la planification complète du site, du système de veille à la gestion du développement, l'assignation/planification des tâches en passant par les spécifications techniques.</p>
+                    <h4>Outils utilisés :</h4>
+                    <ul>
+                        <li>Canva</li>
+                        <li>Trello</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P3">Lien vers le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <div class="interProjet">
+                <h2>Débugger et optimiser un site de photographe</h2>
+                <button class="voir-projet" onclick="afficherModal('projet4')">Voir le projet</button>
+            </div>
+            <div class="modal" id="projet4-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet4')">X</span>
+                    <h3>Débugger et optimiser un site de photographe</h3>
+                    <img src="/Images/Nina Carducci.jpg" alt="Image du projet 4">
+                    <p>Après avoir analyser complètement le site de Nina Carducci, photographe, j'ai procédé au debug ainsi qu'a l'optimisation de son site. <br>
+                        J'ai réalisé une optimisation des images qui étaient beaucoup trop lourde, une optimisation du code et la structure, l'accessibilité ainsi que le référencement naturel.</p>
+                    <h4>Outils utilisés :</h4>
+                    <ul>
+                        <li>Canva</li>
+                        <li>Trello</li>
+                        <li>Lighthouse</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P4">Lien vers le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <div class="interProjet">
+                <h2>Créer une application web de location immobilière avec React</h2>
+                <button class="voir-projet" onclick="afficherModal('projet5')">Voir le projet</button>
+            </div>
+            <div class="modal" id="projet5-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet5')">X</span>
+                    <h3>Débugger et optimiser un site de photographe</h3>
+                    <img src="Images/kasa.png" alt="Image du projet 5">
+                    <p>Kasa, spécialiste dans le métier de la location d'appartements entre particuliers depuis près de 10 ans avec près de 500 annonces postées chaque jour. <br>
+                        J'ai réalisé leur nouvelle plateforme Web en React en respectant leur cahier des charges précis.
+                    </p>
+                    <h4>Languages utilisés :</h4>
+                    <ul>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>Sass</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P5">Lien vers le projet</a>
+                </div>
+            </div>
+        </div>
+        <div class="projet">
+            <div class="interProjet">
+                <h2>Développer le back-end d'un site de notation de livres</h2>
+                <button class="voir-projet" onclick="afficherModal('projet6')">Voir le projet</button>
+            </div>
+            <div class="modal" id="projet6-modal">
+                <div class="modal-contenu">
+                    <span class="fermer" onclick="fermerModal('projet6')">X</span>
+                    <h3>Développer le back-end d'un site de notation de livres</h3>
+                    <img src="Images/MVG.png" alt="Image du projet 6">
+                    <p>Mon vieux grimoire est un site internet de notations de livres. Il permet aux membres d'ajouter de nouveaux livres et de le noter en partageant avec les autres membres.<br>
+                    J'ai réalisé tout le backend du site, de la création du compte, création/modifications/suppression du livre ainsi que de la note moyenne donnée par les différents membres.</p>
+                    <h4>Languages utilisés :</h4>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Nodes.js</li>
+                    </ul>
+                    <h4>Outils utilisés :</h4>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>MongoDB Atlas</li>
+                    </ul>
+                    <a href="https://github.com/DeGyZ/P6">Lien vers le projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="CV" class="center">
+        <h2>Cirriculum Vitae</h2>
+        <p>Vous pouvez <a href="Documents/CV - 2023.pdf" target="_blank"><span>cliquez ici</span> pour accéder à mon CV.</a></p>
+    </section>
+    
+    
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>Si vous avez des questions ou souhaitez me contacter, n'hésitez pas ! : <br><a href="mailto:julien.imbert69@gmail.com"><span>julien.imbert69@gmail.com</span></a> <br></p>
+       
+        </form>
+    </section>
+    
+
+    <footer>
+        <!-- Contenu du pied de page (footer) -->
+    </footer>
+    <script src="js/modale.js"></script>
+</body>
+</html>
