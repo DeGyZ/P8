@@ -215,3 +215,22 @@ button {
 
 
 
+@media screen and (max-width: 992px) {
+    .quiJeSuis {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .texte {
+        width: 100%;
+    }
+    section#competences {
+        flex-direction: column;
+    }
+    .competence {
+        margin: 10px;
+    }
+    img {
+        max-width: 100%;
+    }
+}

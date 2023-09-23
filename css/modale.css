@@ -36,10 +36,14 @@
 }
 
 .modal a {
-    margin-top: 20px !important; 
+    margin-top: 20px; 
 }
 
 .modal ul {
     list-style: none;
+}
+
+@media screen and (max-width: 992px) {
+
 }
 
