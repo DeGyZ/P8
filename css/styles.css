@@ -64,7 +64,7 @@ header p {
 
 #presentation .quiJeSuis {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .texte {
